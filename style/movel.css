@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --cor1:#F2E7DC;
+    --cor2:#A9D9D0;
+    --cor3:#038C7F;
+    --cor4:#027373;
+    --cor5:#0D0D0D;
+
+    --font: "Lato", serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: var(--font);
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cor2);
+}
+
+h1{
+    padding: 100px 0px;
+    font: bolder normal 5em var(--font);
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.233);
+}
+
+main{
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    border: 5px solid var(--cor4);
+    padding: 35px;
+}
+
+main p{
+    padding: 10px 0px;
+    font: normal normal 1.2em var(--font);
+    text-align: center;
+    color: var(--cor1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.value label{
+    padding-bottom: 5px;
+    font: bold normal 1.5em var(--font);
+    text-align: justify;
+}
+
+.value input[type="number"]{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: 3px solid var(--cor4);
+}
+
+.value input[type="number"]::placeholder{
+    text-align: center;
+}
+
+input[type="button"]{
+    margin-top: 25px;
+    width: 200px;
+    height: 35px;
+    font: bolder normal 1.2em var(--font);
+    border: 2px solid var(--cor5);
+    border-radius: 50px;
+    background-color: var(--cor2);
+}
+
+input[type="button"]:hover{
+    transition-duration: 0.25s;
+    border-color: var(--cor1);
+    color: var(--cor1);
+    background-color: var(--cor4);
+}
