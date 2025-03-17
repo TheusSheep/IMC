@@ -26,7 +26,7 @@ body{
 }
 
 h1{
-    padding: 100px 0px;
+    padding: 20px 0px;
     font: bolder normal 5em var(--font);
     color: white;
     text-align: center;
@@ -35,7 +35,28 @@ h1{
 }
 
 main{
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2{
+    font: bold normal 2.5em var(--font);
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.164);
+    color: var(--cor2);
+    text-align: center;
+}
+
+main p{
+    padding: 10px 0px;
+    font: normal normal 1.2em var(--font);
+    text-align: center;
+    color: var(--cor1);
+}
+
+.padrão{
+    display: block;
+    margin-bottom: 10px;
     width: 100%;
     max-width: 500px;
     background-color: var(--cor3);
@@ -44,11 +65,12 @@ main{
     padding: 35px;
 }
 
-main p{
-    padding: 10px 0px;
-    font: normal normal 1.2em var(--font);
-    text-align: center;
-    color: var(--cor1);
+#text{
+    font: bold normal 1.8em var(--font);
+}
+
+#resp{
+    display: none;
 }
 
 form{
@@ -97,4 +119,47 @@ input[type="button"]:hover{
     border-color: var(--cor1);
     color: var(--cor1);
     background-color: var(--cor4);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2.5px solid var(--cor5);
+    text-align: center;
+    margin: auto;
+}
+
+caption{
+    font: bold normal 1.4em var(--font);
+    color: var(--cor5);
+    background-color: var(--cor2);
+    border: 2.5px solid var(--cor5);
+    border-bottom: 0px;
+}
+
+td, th, td{
+    background-color: var(--cor1);
+    border: 1.5px solid var(--cor4);
+    padding: 3px;
+}
+
+#comentário{
+    text-align: center;
+    font: normal italic 1.1em var(--font);
+    color: rgba(0, 0, 0, 0.815);
+}
+
+footer{
+    padding: 25px;
+    margin: auto;
+}
+
+footer p{
+    text-align: center;
+    font: bold normal 1.2em var(--font);
+}
+
+footer a{
+    color: var(--cor1);
+    text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.377);
 }
