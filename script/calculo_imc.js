@@ -1,5 +1,6 @@
 const click = document.getElementById("clica")
 const resp = document.getElementById("resp")
+const inicio = document.getElementById("inicio")
 let altura = document.getElementById("altura")
 let peso = document.getElementById("peso")
 
@@ -18,6 +19,8 @@ click.onclick = function(){
        text.innerHTML = ''
        text.innerHTML = (`Seu IMC é ${IMC.toFixed(2)}`)
        resp.style.display = 'block'
+       inicio.style.display = 'none'
        text.appendChild()
     }
+
 }
