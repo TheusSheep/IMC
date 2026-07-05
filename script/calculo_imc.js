@@ -17,8 +17,8 @@ click.onclick = function(){
        let IMC = pesonum / (alturanum**2)
        let text = document.getElementById('text')
        text.innerHTML = ''
-       text.innerHTML = (`Seu IMC é ${IMC.toFixed(2)}`)
-       resp.style.display = 'block'
+       text.innerText = (`Seu IMC é ${IMC.toFixed(2)}`)
+       resp.style.display = 'flex'
        inicio.style.display = 'none'
        text.appendChild()
     }
