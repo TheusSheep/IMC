@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 736px){
+@media screen and (max-width: 500px){
     
     #inicio{
         border-left: 0px;
@@ -14,4 +14,14 @@
         border-radius: 0px;
     }
 
+}
+
+@media screen and (max-width: 334px){
+    main h2{
+        font-size: 2em;
+    }
+
+    div#inicio.padrão{
+        padding: 50px 0px;
+    }
 }

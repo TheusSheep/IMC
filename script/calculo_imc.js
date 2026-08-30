@@ -6,13 +6,15 @@ let peso = document.getElementById("peso")
 
 // Calculo de IMC
 
-click.onclick = function(){
+function calculoIMC(){
     let pesonum = Number(peso.value)
     let alturanum = Number(altura.value)
     
 
-    if (alturanum <= 0 && pesonum <= 0){
+    if (alturanum <= 0 || pesonum <= 0){
         window.alert('[Erro] Talvez o peso ou a altura não tenha sido colocado de maneira correta.')
+        altura.value = ""
+        peso.value = ""
     } else {
        let IMC = pesonum / (alturanum**2)
        let text = document.getElementById('text')
@@ -24,3 +26,21 @@ click.onclick = function(){
     }
 
 }
+
+// Botão | Enter
+
+click.onclick = calculoIMC
+
+altura.addEventListener("keyup", function (event){
+    if(event.key === "Enter"){
+        event.preventDefault();
+        calculoIMC();
+    }
+});
+
+peso.addEventListener("keyup", function (event){
+    if(event.key === "Enter"){
+        event.preventDefault();
+        calculoIMC();
+    }
+});
